@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+
+/*profile secction*/
+.popup {
+	display: none;
+	background: #ffffff;
+	float: right;
+	border: #0f0f0f 1px solid;
+	margin-right: 19px;
+	padding: 10px;
+	width: 16%;
+	margin-top: -1px;
+	border-radius: 20px;
+}
+
+.nameplate {
+	position: relative;
+	text-align: center;
+	height: 80px;
+	border-radius: 15px;
+	border: black 1px solid;
+}
+
+.popup-option {
+	padding: 6px;
+	cursor: pointer;
+}
+
+.popup-option img {
+	margin-right: 10px;
+}
+
+.profile-img {
+	cursor: pointer;
+	width: 40px;
+	margin-left: 20px;
+}
+
+.popup-option:hover {
+	background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 768px) {
+	.popup {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.popup {
+		width: 70%;
+	}
+
+	.popup-option {
+		padding: 2px 6px;
+	}
+}
