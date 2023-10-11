@@ -25,11 +25,10 @@ public class CCupload extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		// TODO Auto-generated method stub
+		
 		String CC = "CC";
 		String MONO ="MONO";
 		String POLY ="POLY";
@@ -41,6 +40,7 @@ public class CCupload extends HttpServlet {
 		
 		
 		  HttpSession session = request.getSession(true); 
+		  
 		  try {
 			  if(algo.equals(CC)) {
 				  int cckey = Integer.parseInt(key);
@@ -81,19 +81,20 @@ public class CCupload extends HttpServlet {
 					  response.sendRedirect("Result.jsp");
 				  
 				  }else {
-				  
+					  
 					  String decrypted =Cipher.PolyDecrypt(msg, key); 
 					  session.setAttribute("Result", decrypted); 
 					  response.sendRedirect("Result.jsp"); 
+					  
+					  
 				  }  
 			  }
-					  
-		  
-		  }
+		}
+	
 		  catch(Exception e) { 
-			  e.printStackTrace(); 
+			  e.printStackTrace();
 		  }
-		 
+		  
 	}
 
 	/**
