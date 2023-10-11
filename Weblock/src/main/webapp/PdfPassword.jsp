@@ -34,7 +34,7 @@
 					</div>
 				</div>
 
-				<form  action="ApplyPassPdf" method="POST" enctype="multipart/form-data">
+				<form onsubmit=" return validatePassword();" action="ApplyPassPdf" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="dropdown">Modes:</label>
 						 <select id="mode" name="mode">
@@ -64,7 +64,7 @@
 
 					<div class="form-group">
 						<label for="name">Password:</label> <input type="text" id="key"
-							onkeyup="validatePassword(this.value); " name="key" />
+							onkeyup="validatePassword(); " name="key" />
 						<span id="msg"></span>
 					</div>
 
@@ -94,6 +94,62 @@
         }
         
       });
+      
+      function validatePassword() {
+
+			const password = document.getElementById("key").value;
+			console.log(password);
+
+			// Do not show anything when the length of password is zero.
+			if (password.length === 0) {
+				document.getElementById("msg").innerHTML = "";
+				return false;
+			}
+			// Create an array and push all possible values that you want in password
+			var matchedCase = new Array();
+			matchedCase.push("[$@$!%*#?&]"); // Special Charector
+			matchedCase.push("[A-Z]"); // Uppercase Alpabates
+			matchedCase.push("[0-9]"); // Numbers
+			matchedCase.push("[a-z]"); // Lowercase Alphabates
+
+			// Check the conditions
+			var ctr = 0;
+			for (var i = 0; i < matchedCase.length; i++) {
+				if (new RegExp(matchedCase[i]).test(password)) {
+					ctr++;
+				}
+			}
+			// Display it
+			var color = "";
+			var strength = "";
+			var pass = 0;
+
+			switch (ctr) {
+			case 0:
+			case 1:
+			case 2:
+				strength = "Very Weak Password";
+				color = "red";
+				break;
+			case 3:
+				strength = "Medium Password";
+				color = "orange";
+				break;
+			case 4:
+				strength = "Strong Password";
+				color = "green";
+				pass = 1;
+				break;
+			}
+			document.getElementById("msg").innerHTML = strength;
+			document.getElementById("msg").style.color = color;
+
+			if (pass == 1)
+				return true;
+			else
+				return false;
+
+		}
     </script>
     <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -106,6 +162,6 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-<script src="assets/js/ScriptForm.js"></script>
+
 </body>
 </html>

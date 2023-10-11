@@ -7,9 +7,8 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/profilecard.css" rel="stylesheet">
 
- <style>
-      
-    </style>
+<style>
+</style>
 </head>
 
 <body>
@@ -18,14 +17,14 @@
 	<jsp:include page="/ExtraFiles/header.jsp"></jsp:include>
 	<!-- End Header -->
 
-	
+
 
 	<!-- ======= Hero Section ======= -->
 	<section id="hero"
 		class="d-flex align-items-center justify-content-center">
 		<div class="container" data-aos="fade-up">
 
-			<div class="row justify-content-center" data-aos="fade-up" 
+			<div class="row justify-content-center" data-aos="fade-up"
 				data-aos-delay="150">
 				<div class="col-xl-6 col-lg-8">
 					<h1>
@@ -36,8 +35,8 @@
 				</div>
 			</div>
 
-			<div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" style="width:106%;"
-				data-aos-delay="250">
+			<div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in"
+				style="width: 106%;" data-aos-delay="250">
 				<div class="col-xl-2 col-md-4">
 					<div class="icon-box">
 
@@ -196,10 +195,11 @@
 						<div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in"
 							data-aos-delay="150">
 							<i class="bx bx-receipt"></i>
-							<h4>Advanced Encryption</h4>
-							<p>Implemented diverse encryption algorithms, empowering
-								users to encrypt and decrypt files with customizable keys,
-								enhancing data protection.</p>
+							<h4>Two Factor Authentication</h4>
+							<p>Integrate two-factor authentication into your application
+								to enhance security. When users log in or perform sensitive
+								operations like decrypting files, they'll receive a one-time
+								code on their email.</p>
 						</div>
 						<div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
 							<i class="bx bx-cube-alt"></i>

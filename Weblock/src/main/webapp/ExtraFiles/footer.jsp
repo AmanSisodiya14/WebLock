@@ -8,8 +8,8 @@
               <h3>Web<span>Lock.</span></h3>
               <p>
                 Shri Vaishnav Vidyapeeth Vishwavidyalaya <br>
-                Campus : Indore â€“ Ujjain Road, <br>
-                Indore â€“ 453111<br>
+                Campus : Indore  Ujjain Road, <br>
+                Indore €“ 453111<br>
                 <br>
                 <strong>Phone:</strong> +91 7974914583<br>
                 <strong>Email:</strong> weblock@gmail.com<br>

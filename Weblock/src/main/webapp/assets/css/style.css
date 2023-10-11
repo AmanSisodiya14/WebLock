@@ -10,8 +10,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-	font-family: "Open Sans", sans-serif;
+	/*font-family: "Open Sans", sans-serif;*/
+	font-family: "Muli-Regular";
 	color: #444444;
+	font-size: 18px;
 }
 
 a {
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Raleway", sans-serif;
+	/*font-family: "Raleway", sans-serif;*/
 }
 
 /*--------------------------------------------------------------
@@ -206,7 +208,7 @@ h6 {
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 0 10px 30px;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 600;
 	color: #fff;
 	white-space: nowrap;
@@ -435,7 +437,8 @@ h6 {
 	font-weight: 700;
 	line-height: 64px;
 	color: #fff;
-	font-family: "Poppins", sans-serif;
+	/*font-family: "Poppins", sans-serif;*/
+	font-style: italic !important;
 }
 
 #hero h1 span {
@@ -545,7 +548,7 @@ section {
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-family: "Poppins", sans-serif;
+	
 	color: #151515;
 }
 
@@ -639,7 +642,7 @@ section {
 }
 
 .features .icon-box p {
-	font-size: 15px;
+	font-size: 18px;
 	color: #848484;
 	margin-left: 60px;
 }
@@ -684,7 +687,7 @@ section {
 .services .icon-box h4 {
 	font-weight: 700;
 	margin-bottom: 15px;
-	font-size: 24px;
+	font-size: 25px;
 }
 
 .services .icon-box h4 a {
@@ -698,7 +701,7 @@ section {
 
 .services .icon-box p {
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 0;
 }
 
@@ -975,7 +978,7 @@ section {
 .contact .info p {
 	padding: 0 0 0 60px;
 	margin-bottom: 0;
-	font-size: 14px;
+	font-size: 16px;
 	color: #484848;
 }
 
@@ -1038,7 +1041,7 @@ section {
 .contact .php-email-form textarea {
 	border-radius: 0;
 	box-shadow: none;
-	font-size: 14px;
+	font-size: 16px;
 	border-radius: 4px;
 }
 
