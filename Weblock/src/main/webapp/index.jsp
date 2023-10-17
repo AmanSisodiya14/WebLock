@@ -41,7 +41,7 @@
 					<div class="icon-box">
 
 						<h3>
-							<a href="AesUpload.jsp">Try WebLock</a>
+							<a href="AesUpload.jsp">WebLock</a>
 						</h3>
 					</div>
 				</div>
